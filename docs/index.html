@@ -8,9 +8,8 @@
 
 <body>
   <header>
-    <img src="images/logo.png" alt="H-ResAD Logo" height="60">
-    <h1>H-ResAD</h1>
-    <p>Hierarchically Annotated High-Resolution Anomaly Detection Dataset</p>
+    <h1>H-ResAD:</h1>
+    <p>A Hierarchically Annotated High-Resolution Anomaly Detection Dataset for Ultrasparse Defects in Metallic Bipolar Plates</p>
   </header>
 
   <main>
@@ -21,15 +20,19 @@
 
     <section>
       <h2>Dataset Overview</h2>
-      <img src="images/HResAD_Fig1.png" width="700">
+      <img src="images/Fig.1.png" width="900">
       <p><i>Overview of H-ResAD dataset construction process.</i></p>
     </section>
 
     <section>
       <h2>How to Get the Dataset</h2>
       <p>
-        Please send an email to <a href="mailto:hresad2025@gmail.com">hresad2025@gmail.com</a> 
-        with the following information:
+        This dataset is publicly available. It is free for professors and researcher scientists affiliated to a University.
+        Permission to use but not reproduce or distribute our database is granted to all researchers given that the following 
+        steps are properly followed:
+        Please send an email to <a href="2410018@tongji.edu.cn">2410018@tongji.edu.cn</a>  before downloading the dataset. 
+        You will need a password to access the files of this dataset.
+        Your Email MUST be sent from a valid University account and MUST include the following text:
       </p>
       <pre>
 1. Subject: Application to Download the H-ResAD Dataset
@@ -50,35 +53,45 @@ I will not share or sell any part of the dataset.
     <section>
       <h2>Abstract</h2>
       <p>
-        Unsupervised anomaly detection (UAD) has emerged as a practical paradigm 
-        for industrial visual inspection due to its low reliance on defect samples. 
-        However, existing benchmarks fail to capture the ultrasparse nature of submillimeter anomalies 
-        and the need for tolerance-aware hierarchical annotation. 
-        To bridge this gap, we introduce H-ResAD, the first industrial anomaly detection dataset 
-        featuring 2048×2048 high-resolution tiles with an extremely low anomaly proportion of 0.05%, 
-        together with hierarchical annotations reflecting zone-specific tolerances of metallic bipolar plates.
+        Unsupervised anomaly detection (UAD) has emerged as a practical paradigm for industrial visual detection
+        due to its low reliance on defect samples. Yet, existing benchmarks fail to capture two critical aspects 
+        of precision manufacturing: the ultrasparse nature of submillimeter anomalies and the need for tolerance-aware 
+        hierarchical annotation across functional zones. To bridge this gap, we introduce H-ResAD, the first industrial 
+        anomaly detection dataset that jointly features 2048×2048 high-resolution tiles with an extremely low anomaly 
+        proportion of 0.05%, together with hierarchical annotations reflecting zone-specific tolerances of metallic 
+        bipolar plates. This design retains fine-grained defect details while realistically modeling the sparsity and 
+        functional constraints of real-world detection. We systematically benchmark seven representative UAD methods, 
+        two high-resolution frameworks (Tiled ensemble, HiAD), and five vision-language models (VLMs). Results show that 
+        conventional UAD excels at image-level discrimination but struggles with pixel-level localization and regional 
+        consistency. High-resolution frameworks substantially improve robustness, with HiAD particularly effective for 
+        ultrasparse anomaly detection. VLMs demonstrate promising zero/few-shot adaptability but remain limited under 
+        ultrasparse and hierarchical settings. Overall, H-ResAD establishes a challenging and realistic benchmark that 
+        closes the gap between academic datasets and industrial demands. Beyond evaluation, it provides a unified platform 
+        for future research into lightweight high-resolution architectures, tolerance-aware learning frameworks, and multimodal 
+        anomaly detection systems.
       </p>
     </section>
 
     <section>
-      <h2>Dataset Construction</h2>
-      <img src="images/HResAD_Fig2.png" width="700">
+      <h2>Performance Comparisions</h2>
+      <img src="images/Fig.2.tif" width="900">
+      <p><i>Qualitative results of selected UAD and VLMs on H-ResAD dataset (Set U).</i></p>
     </section>
 
     <section>
-      <h2>Functional Zones</h2>
-      <img src="images/HResAD_Fig3.png" width="700">
-      <p><i>Visualization of functional zones with hierarchical tolerance standards.</i></p>
+      <h2>Performance Comparisions</h2>
+      <img src="images/Fig.3.tif" width="900">
+      <p><i>Qualitative results of high-resolution frameworks with selected UAD methods on H-ResAD dataset (Set U).</i></p>
     </section>
 
     <section>
-      <h2>Benchmark Results</h2>
-      <img src="images/HResAD_Tab1.png" width="700">
+      <h2>Datasets Comparisons</h2>
+      <img src="images/TABLE 1.png" width="700">
     </section>
 
     <section>
       <h2>Project Page</h2>
-      <a href="https://H-ResAD.github.io/H-ResAD2025" target="_blank">H-ResAD Official Page</a>
+      <a href="https://H-ResAD.github.io/H-ResAD-Dataset" target="_blank">H-ResAD Official Page</a>
     </section>
   </main>
 
